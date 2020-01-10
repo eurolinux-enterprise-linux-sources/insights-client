@@ -7,7 +7,7 @@
 Name:                   insights-client
 Summary:                Uploads Insights information to Red Hat on a periodic basis
 Version:                3.0.3
-Release:                9%{?dist}
+Release:                8%{?dist}
 Source0:                https://github.com/redhatinsights/insights-client/archive/insights-client-%{version}.tar.gz
 Epoch:                  0
 License:                GPLv2+
@@ -67,7 +67,6 @@ Patch10: 0010-Updating-egg-signature.patch
 Patch11: 0011-Bump-release-to-7.patch
 Patch12: 0012-GPG-verify-egg-in-parent-process.patch
 Patch13: 0013-Bump-release-to-8.patch
-Patch14: 0014-Bump-release-to-9.patch
 
 %description
 Sends insightful information to Red Hat for automated analysis
@@ -150,16 +149,7 @@ if  [ $1 -eq 1  ]; then
             ln -sf /etc/insights-client/insights-client.cron /etc/cron.daily/insights-client                               
         %else
             %_bindir/systemctl start insights-client.timer
-			%_bindir/systemctl enable insights-client.timer
         %endif
-	else
-		# Need to handle RHEL 7.5 GA where timer was started but disabled
-		# Enable timer if it's currently started but disabled
-		if %_bindir/systemctl status insights-client.timer > /dev/null; then
-			if ! %_bindir/systemctl is-enabled insights-client.timer > /dev/null; then
-				%_bindir/systemctl enable insights-client.timer > /dev/null
-			fi
-		fi
     fi 
 fi
 
@@ -296,9 +286,6 @@ test "x$RPM_BUILD_ROOT" != "x" && rm -rf $RPM_BUILD_ROOT
 /usr/share/man/man5/*.5.gz
 
 %changelog
-* Wed Mar 14 2018 Richard Brantley <rbrantle@redhat.com> - 3.0.3-8
-- Resolves: rhbz#1555041
-
 * Fri Feb 16 2018 Kyle Lape <klape@redhat.com> - 3.0.3-6
 - Persist systemd timer config between reboots
 
