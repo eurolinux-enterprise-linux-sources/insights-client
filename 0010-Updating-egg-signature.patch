@@ -1,0 +1,47 @@
+From 0698d4a7fec8a3240cdaff94614f8a32c25d339d Mon Sep 17 00:00:00 2001
+From: rpm-build <rpm-build>
+Date: Mon, 19 Feb 2018 08:32:49 -0600
+Subject: [PATCH] Updating egg signature
+
+---
+ etc/rpm.egg.asc | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+diff --git a/etc/rpm.egg.asc b/etc/rpm.egg.asc
+index c43031a..21d8b0a 100644
+--- a/etc/rpm.egg.asc
++++ b/etc/rpm.egg.asc
+@@ -1,17 +1,17 @@
+ -----BEGIN PGP SIGNATURE-----
+ Version: GnuPG v1
+ 
+-iQIVAwUAWmuA7XUU932DZrDZAQic/xAAlc7I+VT2y4Ok7mu5OJKerWooo0a77Tw8
+-zjciAT8QuhmJJkYqJIpDdWYCwQdDMTrYwf4fyyBM7Y/e0aAavYsJy8vo/LD80Yx8
+-7ZaWgN/dJbPacLSurCaMV044vAoIh2K0qvKYEZjK8JRtaMWQDKEkjQ24Hryw7pbo
+-D+U6R5iXmaJ30s4BEnwB3skeBKzrXTL8o0usS7E56InL7nVFqS/63z5P7TYD+Ym6
+-eRrb0REavSNb6w6P92Wg9ks1ZzGV013kHAw0NmD/AF1ZMGhZZ1RMFXPevOwbvPLH
+-eChxkaNsB5oaWix4XQUcYpRQBdOdZ0ViOkZ4DTRAW0EYjSACpFa+6yzD+huMgqpo
+-Tf4183e0LuAEQf/p7bqbb7rhXLJPW9mSeAkxeI7EvC0ZGrbui4c1Smui9/+m4FBo
+-b5vAkc5iNv9SuzI0tPgJI8npkqVQAP9/v41ygvw1rFPsTrJ65i9hZwPcmDDZqaro
+-TlSV7XIdgtz8OjLtfI0b+jtpLU/pYD0Y4VsGEouoIdpd2nkc9tOpWF9+Wkg+42o4
+-1jhVCvn9/6QrBl7nrFVAhwDNIc1B6f2++i+ag/+ZypJOQZ09baSc2k7cgeisoioO
+-+nPBrrSfB4Wnbjoz+JNjlLS3omablBEiEC2zNGZipX+60NQHTLxLP0rmuqElxONI
+-G6oWPLrspTg=
+-=Dp1c
++iQIVAwUAWorgBXUU932DZrDZAQgosBAAjpQ9pZcRcmMfDTNu3lT0RB59+7Rji368
++UJFQ7NgUuK/paQNE/JnDx8kPsigPYiwSnhZuy34nnkFoPwH7e9igzofwyshiljH0
++29XCznBKHsnPRbIX7kuqEs2chn2bbHX3+uZgfvipLbxm4UuQ2n5hH2AT4saVFtiO
++qNFKIdQ9ib7EGfnuSF7NV9E+WbEu+/ZORxsE/ceKkIYsKdAPiT2TcCIY6y4+B6Kq
++UCFxoCHIwrAaWoSKixkUpr3N3JkzyA6rf38n3sj2+MMNztmnSyCgt1twVmNgj7Mf
++01Jea5m+ETSuzXBBSZ1iTHUv2AjgsLrufWyIrOBYRKjzIBXKdS1KaLO/kPC++s8+
++lxsEp3mNktCAcl22og5R8pcy9pGTuXUp0JxbblXI/4V3qjCNxA0pgCAL+18hg9Rg
++1wU0tJQzFJCmzMNT3WSYzmcbW6uwNTtE50mznxbq3dxoTGd8K/DL+LPsVvYTKDHf
++fmipIPnHqef0YX2b7IRnZ1WHSrm4vlpJuE+DYUqefFQHirh8Dl/mbcYCtNgENNnd
++/FaHmehPrjK+CdLC1+t7lAUg6nQAxCnZTYcxQWVG4yA9x3NT2GOSZQZI82D9F6cq
++XFh3GdKv8CnmaoFl51McfQ92v33Lejw/C5I59wr1gn85Q3U3qDlXILPGLHS54cXH
++28mu//8I/0k=
++=VCaP
+ -----END PGP SIGNATURE-----
+-- 
+2.14.3
+

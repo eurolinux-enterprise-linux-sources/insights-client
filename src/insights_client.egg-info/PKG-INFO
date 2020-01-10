@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: insights-client
+Version: 3.0.3
+Summary: Red Hat Insights
+Home-page: UNKNOWN
+Author: Richard Brantley <rbrantle@redhat.com>, Jeremy Crafts <jcrafts@redhat.com>, Dan Varga <dvarga@redhat.com>
+Author-email: rbrantle@redhat.com, jcrafts@redhat.com
+License: GPL
+Description: 
+        Uploads insightful information to Red Hat
+        
+Platform: UNKNOWN

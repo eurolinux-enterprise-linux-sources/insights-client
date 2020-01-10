@@ -1,0 +1,22 @@
+From a7c23e89a1dfd1c61ad09d410e758c515440d16b Mon Sep 17 00:00:00 2001
+From: Kyle Lape <klape@redhat.com>
+Date: Thu, 8 Feb 2018 12:13:36 -0600
+Subject: [PATCH] Bump release again
+
+---
+ insights_client/constants.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/insights_client/constants.py b/insights_client/constants.py
+index e57b7e6..4e77354 100644
+--- a/insights_client/constants.py
++++ b/insights_client/constants.py
+@@ -5,4 +5,4 @@ Constants
+ 
+ class InsightsConstants(object):
+     app_name = 'insights-client'
+-    version = '3.0.3-2'
++    version = '3.0.3-3'
+-- 
+2.14.3
+

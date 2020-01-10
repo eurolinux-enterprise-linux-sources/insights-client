@@ -1,0 +1,5 @@
+[console_scripts]
+redhat-access-insights = insights_client:_main
+insights-client = insights_client:_main
+insights-client-run = insights_client.run:_main
+

@@ -1,0 +1,11 @@
+requests
+PyYaml
+six
+pyOpenSSL
+
+[develop]
+requests
+PyYaml
+six
+pyOpenSSL
+flake8

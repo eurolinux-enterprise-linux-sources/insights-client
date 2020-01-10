@@ -1,0 +1,19 @@
+From d3c11cfc25c202f467e4b56b82b00f5a98380267 Mon Sep 17 00:00:00 2001
+From: Kyle Lape <klape@redhat.com>
+Date: Thu, 15 Feb 2018 13:22:01 -0600
+Subject: [PATCH] Bump egg release to 3
+
+---
+ insights/RELEASE | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/egg/insights/RELEASE b/egg/insights/RELEASE
+index 0cfbf088..00750edc 100644
+--- a/egg/insights/RELEASE
++++ b/egg/insights/RELEASE
+@@ -1 +1 @@
+-2
++3
+-- 
+2.14.3
+

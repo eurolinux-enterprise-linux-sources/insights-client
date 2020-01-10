@@ -1,0 +1,47 @@
+From c22aec043ba4671561bfcfa7596ced69e31c7fab Mon Sep 17 00:00:00 2001
+From: rpm-build <rpm-build>
+Date: Fri, 16 Feb 2018 09:51:14 -0600
+Subject: [PATCH] Resolving differences between build metadata
+
+This is to enable bit-for-bit reproducible eggs
+---
+ egg/EGG-INFO/PKG-INFO     | 1 +
+ egg/EGG-INFO/requires.txt | 4 ++--
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/egg/EGG-INFO/PKG-INFO b/egg/EGG-INFO/PKG-INFO
+index f72b3fb..4fca0b8 100644
+--- a/egg/EGG-INFO/PKG-INFO
++++ b/egg/EGG-INFO/PKG-INFO
+@@ -6,6 +6,7 @@ Home-page: https://github.com/redhatinsights/insights-core
+ Author: Red Hat, Inc.
+ Author-email: insights@redhat.com
+ License: Apache 2.0
++Description-Content-Type: UNKNOWN
+ Description: =============
+         Insights Core
+         =============
+diff --git a/egg/EGG-INFO/requires.txt b/egg/EGG-INFO/requires.txt
+index db82e21..23dd4fc 100644
+--- a/egg/EGG-INFO/requires.txt
++++ b/egg/EGG-INFO/requires.txt
+@@ -1,14 +1,14 @@
+ Jinja2==2.9.6
+ argparse
+ importlib
+-pyyaml>=3.10,<=3.12
++pyyaml<=3.12,>=3.10
+ pyOpenSSL
+ six
+ requests
+ 
+ [develop]
+ wheel
+-pyyaml>=3.10,<=3.12
++pyyaml<=3.12,>=3.10
+ Sphinx
+ futures==3.0.5
+ flake8==3.3.0
+-- 
+2.14.3
+
